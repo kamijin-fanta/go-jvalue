@@ -1,6 +1,8 @@
 # go-jvalue
 
 ```go
+import "github.com/kamijin-fanta/go-jvalue"
+
 var testJson = `
 [{
     "arr": [1,2,3],
