@@ -11,9 +11,9 @@ var testJson = `
     }
 }]`
 
-jvalue, err := DecodeJSONString(testJson)
-obj, _ := jvalue.Index(0).Key("obj").Key("a").ToInt()
-fmt.Println("root[0].obj.a", *obj);
+value, _ := jvalue.DecodeJSONString(testJson)
+obj, _ := value.Index(0).Key("obj").Key("a").ToInt()
+fmt.Println("root[0].obj.a", *obj)
 ```
 
 ## cast
